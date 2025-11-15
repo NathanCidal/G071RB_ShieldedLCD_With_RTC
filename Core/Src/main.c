@@ -156,10 +156,10 @@ void LCD_goto(uint8_t x, uint8_t y){
 }
 
 void LCD_Init(uint8_t cursor){
-	LCD_wrcom4(0x02);
-	LCD_wrcom4(0x02);
-	LCD_wrcom4(0x02);
 	LCD_wrcom4(0x03);
+	LCD_wrcom4(0x03);
+	LCD_wrcom4(0x03);
+	LCD_wrcom4(0x02);
 	LCD_wrcom(0x28);
 	LCD_wrcom(cursor);
 	LCD_wrcom(0x06);
